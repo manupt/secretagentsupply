@@ -1,0 +1,39 @@
+a, span, li, header, div, footer, header{
+  border: 1px solid white;
+}
+img{
+  border: 1px solid white
+}
+
+html, body{
+  height: 100%;
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+span{
+  color: white;
+}
+
+header{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.header_container{
+  display: flex;
+  width: 960px;
+  align-items: center;
+}
+
+.header_container img{
+  height: 1.5rem;
+  width: auto;
+  margin: 0 1rem 0 0.5rem;
+}
+
+.header_container span{
+  margin: 0.66rem 0rem;
+  font-size: 1rem;
+}
