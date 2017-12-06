@@ -1,8 +1,8 @@
 a, span, li, header, div, footer, header{
-  border: 1px solid white;
+  border: 1px solid black;
 }
 img{
-  border: 1px solid white
+  border: 1px solid black;
 }
 
 html, body{
@@ -11,10 +11,11 @@ html, body{
   font-family: Helvetica;
 }
 
-span{
+span, p{
   color: white;
 }
 
+/*HEADER*/
 header{
   background-color: black;
   display: flex;
@@ -36,4 +37,113 @@ header{
 .header_container span{
   margin: 0.66rem 0rem;
   font-size: 1rem;
+}
+
+/*BANNER*/
+.banner{
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.banner_container{
+  display: flex;
+  width: 960px;
+}
+
+.banner_box{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 25rem;
+  height: 10rem;
+  margin-top: 9rem;
+  font-weight: bold;
+}
+
+.banner_box span{
+  font-size: 1rem;
+  margin: 2rem 0rem 0.25rem 3rem;
+}
+
+.banner_box p{
+  font-size: 2rem;
+  margin-left: 3rem;
+  margin-bottom: 0.25rem;
+}
+
+/*NAV TAB*/
+.div_tab{
+  display: flex;
+  justify-content: center;
+  background-color: firebrick;
+}
+
+.tab_container{
+  width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+}
+
+a{
+  color: white;
+}
+
+.tab_container nav{
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*CONTENT*/
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.content_container{
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image{
+  width: 30%;
+}
+
+.image img{
+  height: 9rem;
+  width: auto;
+  padding: 2rem 0rem;
+  display: block;
+  margin: auto;
+}
+
+.glasses{
+  width: inherit;
+  height: 9rem;
+  padding: 2rem 0rem;
+  margin: auto;
+}
+
+.glasses img{
+  width: auto;
+  height: 3rem;
+  padding: 2rem 0rem;
+  display: block;
+  margin: auto;
+}
+
+.image p{
+  background-color: black;
+  text-align: center;
+  padding: 0.5rem 0rem;
 }
