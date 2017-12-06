@@ -1,9 +1,9 @@
-a, span, li, header, div, footer, header{
+/*a, span, li, header, div, footer, header{
   border: 1px solid black;
 }
 img{
   border: 1px solid black;
-}
+}*/
 
 html, body{
   height: 100%;
@@ -113,10 +113,12 @@ a{
   width: 960px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .image{
   width: 30%;
+  border: 4px solid black;
 }
 
 .image img{
@@ -127,23 +129,30 @@ a{
   margin: auto;
 }
 
-.glasses{
-  width: inherit;
-  height: 9rem;
-  padding: 2rem 0rem;
-  margin: auto;
-}
-
-.glasses img{
-  width: auto;
-  height: 3rem;
-  padding: 2rem 0rem;
-  display: block;
-  margin: auto;
-}
-
 .image p{
   background-color: black;
   text-align: center;
   padding: 0.5rem 0rem;
+}
+
+.info_container{
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.location, .hours{
+  width: 35%;
+}
+
+.info_container p{
+  background-color: black;
+  padding: 1rem 0rem 1rem 2rem;
+  margin-bottom: 1%;
+}
+
+.info_container span{
+  color: black;
+  margin-bottom: 4rem;
 }
