@@ -1,11 +1,11 @@
 /*a, span, li, header, div, footer, header{
-  border: 1px solid black;
+  border: 1px solid white;
 }
 img{
-  border: 1px solid black;
+  border: 1px solid white;
 }*/
 
-html, body{
+html{
   height: 100%;
   font-size: 18px;
   font-family: Helvetica;
@@ -135,6 +135,19 @@ a{
   padding: 0.5rem 0rem;
 }
 
+.image.glasses{
+  display: flex;
+  flex-direction: column;
+}
+
+.image.glasses img{
+  height: 4rem;
+  width: auto;
+  display: block;
+  margin: auto;
+  padding: 0rem;
+}
+
 .info_container{
   width: 960px;
   display: flex;
@@ -144,6 +157,7 @@ a{
 
 .location, .hours{
   width: 35%;
+  margin-bottom: 4rem;
 }
 
 .info_container p{
@@ -154,5 +168,17 @@ a{
 
 .info_container span{
   color: black;
-  margin-bottom: 4rem;
+}
+
+/*FOOTER*/
+footer{
+  height: 5rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_container{
+  width: 960px;
 }
