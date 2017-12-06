@@ -5,7 +5,7 @@ img{
   border: 1px solid white;
 }*/
 
-html{
+html, body{
   height: 100%;
   font-size: 18px;
   font-family: Helvetica;
@@ -92,6 +92,7 @@ header{
 
 a{
   color: white;
+  text-decoration: none;
 }
 
 .tab_container nav{
@@ -181,4 +182,119 @@ footer{
 
 .footer_container{
   width: 960px;
+}
+
+@media only screen and (min-width: 1024px){
+  .menu{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  nav span{
+    display: none;
+  }
+
+  .tab_container nav{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu p{
+    color: white;
+  }
+
+  .content_container .image{
+    width: 47%;
+  }
+  .image.glasses{
+    display: none;
+  }
+
+  .location, .hours{
+    min-width: 35%;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 470px){
+
+  .banner{
+    background-image: url("../images/moto.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner_box{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 25rem;
+    height: 5rem;
+    margin-top: 5rem;
+    font-weight: bold;
+  }
+
+  .banner_box span{
+    font-size: 0.77rem;
+    font-weight: bold;
+    margin: 1rem 0rem 0.25rem 2rem;
+  }
+
+  .banner_box p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .content_container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image.pen{
+    width: 90%;
+  }
+
+  .image.watch{
+    display: none;
+  }
+
+  .info_container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+
+  .location, .hours{
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  .info_container p{
+    background-color: black;
+    padding: 1rem 0rem 1rem 2rem;
+    margin-bottom: 1%;
+  }
+
+  .info_container span{
+    color: black;
+  }
+
+  footer{
+    margin-top: 4rem;
+    height: 5rem;
+  }
+
+  .footer_container{
+    text-align: center;
+  }
 }
